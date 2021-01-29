@@ -17,30 +17,56 @@
        url('../fonts/pt-sans-narrow-v12-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+/* набор универсальных стилей  */
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0
 }
 
-.simple-title {
+*,::before,::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+img {
+    max-width: 100%
+}
+
+.visually-hidden:not(:focus),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 42px;
   color: #000000;
 }
 
-.simple-button {
+.button {
   background: #000000;
   color: #ffffff;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   padding: 10px 33px;
@@ -50,26 +76,51 @@
   cursor: pointer;
 }
 
+.button-close {
+  border: none;
+  background-color: transparent;
+}
+
 .body,
-.simple-text {
+.text {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
-  font-family: PT Sans Narrow;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
-.simple-form__label {
+.form__label {
   margin-bottom: 10px;
 }
-.simple-form__input {
+.form__input {
   border: 2px solid #000000;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
   padding: 10px 17px 9px;
   position: relative;
+}
+
+.news__date {
+  text-transform: none;
+}
+
+.social__item {
+  max-width: 43px;
+  width: 100%;
+}
+
+.social__link {
+  background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
 }
