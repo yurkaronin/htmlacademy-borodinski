@@ -1,0 +1,75 @@
+/* pt-sans-narrow-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/pt-sans-narrow-v12-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-sans-narrow-v12-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* pt-sans-narrow-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/pt-sans-narrow-v12-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-sans-narrow-v12-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.simple-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.simple-button {
+  background: #000000;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px 33px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.body,
+.simple-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: PT Sans Narrow;
+}
+
+.simple-form__label {
+  margin-bottom: 10px;
+}
+.simple-form__input {
+  border: 2px solid #000000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 17px 9px;
+  position: relative;
+}
