@@ -48,6 +48,23 @@ img {
   max-width: 100%;
 }
 
+a,
+button,
+input {
+  font-family: inherit;
+}
+
+body {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -90,22 +107,18 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  text-align: center;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
 }
 
 .button-close {
   border: none;
   background-color: transparent;
-}
-
-.body,
-.text {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #000000;
-  font-family: "PT Sans Narrow", sans-serif;
 }
 
 .form__label {
@@ -138,4 +151,127 @@ input[type="radio"].visually-hidden {
   align-items: center;
   width: 100%;
   height: 100%;
+}
+
+/* шапка  */
+.navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: transparent;
+}
+
+/* преимущества  */
+.advantages .title {
+  color: #ffffff;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+/* обертка для секций  */
+.sections-wrapper {
+  background-color: #f8f5f2;
+  color: #242424;
+}
+
+/* новости  */
+.news__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* галерея  */
+.photo-gallery__wrapper {
+  border: 7px solid #ffffff;
+  background-color: gray;
+  margin: 0;
+}
+
+/* контакты  */
+.contacts__link {
+  color: inherit;
+}
+
+/* подвал  */
+.footer {
+  color: #ffffff;
+  background-color: #242424;
+}
+
+.footer__link,
+.footer__tel {
+  color: inherit;
+}
+
+.footer__link:hover,
+.footer__link:focus,
+.footer__link:active {
+  text-decoration: none;
+}
+
+.footer__tel {
+  text-decoration: none;
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .button:hover,
+.footer .button:focus,
+.footer .button:active {
+  background-color: #ffffff;
+  color: #242424;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+/* модалки  */
+.modal {
+  background-color: #f8f5f2;
+  color: #242424;
+}
+
+.modal-wrapper {
+  border: 7px solid #ffffff;
+  background-color: gray;
+}
+
+.form__link {
+  color: inherit;
+}
+
+.form__link:hover,
+.form__link:focus,
+.form__link:active {
+  text-decoration: none;
 }

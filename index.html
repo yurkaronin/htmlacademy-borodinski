@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="body">
+<body>
   <!-- шапка  -->
   <header class="header">
     <div class="wrapper">
@@ -35,112 +35,116 @@
     </div>
   </header>
 
-  <main class="wrapper">
-    <!-- заголовок страницы  -->
-    <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+  <main>
+    <div class="wrapper">
+      <!-- заголовок страницы  -->
+      <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 
-    <!-- преимущества  -->
-    <section class="advantages">
-      <h2 class="visually-hidden">Преимущества барбершопа</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <span class="title">Быстро</span>
-          <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной
-            стрижки-минутки!</p>
-        </li>
-        <li class="advantages__item">
-          <span class="title">Круто</span>
-          <p>забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
-          </p>
-        </li>
-        <li class="advantages__item">
-          <span class="title">Дорого</span>
-          <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает
-            определенный статус?</p>
-        </li>
-      </ul>
-    </section>
+      <!-- преимущества  -->
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества барбершопа</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <span class="title">Быстро</span>
+            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной
+              стрижки-минутки!</p>
+          </li>
+          <li class="advantages__item">
+            <span class="title">Круто</span>
+            <p>забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <span class="title">Дорого</span>
+            <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает
+              определенный статус?</p>
+          </li>
+        </ul>
+      </section>
+      <div class="sections-wrapper">
+        <!-- новости  -->
+        <section class="news">
+          <h2 class="title">Новости</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <article class="news__card">
+                <a class="news__link" href="#">
+                  <h3 class="news__text">Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время
+                    стрижки</h3>
+                </a>
+                <time class="news__date" datetime="2021-01-11">11 января</time>
+              </article>
+            </li>
+            <li class="news__item">
+              <article class="news__card">
+                <a class="news__link" href="#">
+                  <h3 class="news__text">В нашей команде пополнение, борис «бритва» стригунец, обладатель множества
+                    титулов и
+                    наград пополнил наши
+                    стройные ряды</h3>
+                </a>
+                <time class="news__date" datetime="2021-01-18">18 января</time>
+              </article>
+            </li>
+          </ul>
 
-    <!-- новости  -->
-    <section class="news">
-      <h2 class="title">Новости</h2>
-      <ul class="news__list">
-        <li class="news__item">
-          <article class="news__card">
-            <a class="news__link" href="#">
-              <h3 class="news__text">Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время
-                стрижки</h3>
+          <a class="button" href="blog.html">Все новости</a>
+        </section>
+
+        <!-- фотогалерея  -->
+        <section class="photo-gallery">
+          <h2 class="title">Фотогалерея</h2>
+          <figure class="photo-gallery__wrapper">
+            <a class="photo-gallery__link" href="">
+              <img class="photo-gallery__img" src="img/photo.jpg" alt="фотография интерьера барбершопа" width="286"
+                height="164">
             </a>
-            <time class="news__date" datetime="2021-01-11">11 января</time>
-          </article>
-        </li>
-        <li class="news__item">
-          <article class="news__card">
-            <a class="news__link" href="#">
-            <h3 class="news__text">В нашей команде пополнение, борис «бритва» стригунец, обладатель множества титулов и
-              наград пополнил наши
-              стройные ряды</h3>
-            </a>
-            <time class="news__date" datetime="2021-01-18">18 января</time>
-          </article>
-        </li>
-      </ul>
+          </figure>
 
-      <a class="button" href="blog.html">Все новости</a>
-    </section>
+          <button class="button" type="button" disabled>Назад</button>
+          <button class="button" type="button">Вперёд</button>
+        </section>
+      </div>
+      <div class="sections-wrapper">
+        <!-- контакты  -->
+        <section class="contacts">
+          <h2 class="title">Контактная информация</h2>
 
-    <!-- фотогалерея  -->
-    <section class="photo-gallery">
-      <h2 class="title">Фотогалерея</h2>
-      <figure class="photo-gallery__wrapper">
-        <a class="photo-gallery__link" href="">
-          <img class="photo-gallery__img" src="img/photo.jpg" alt="фотография интерьера барбершопа" width="286"
-            height="164">
-        </a>
-      </figure>
+          <p class="contacts__text">Барбершоп «Бородинский»<br>
+            Адрес: г. санкт-петербург, б. конюшенная, д. 19/8<br>
+            телефон: <a class="contacts__link" href="tel:88126660266">+7 (812) 666-02-66</a></p>
 
-      <button class="button" type="button" disabled>Назад</button>
-      <button class="button" type="button">Вперёд</button>
-    </section>
+          <p class="contacts__text">Время работы:<br>
+            пн—пт: с 10:00 до 22:00<br>
+            сб—вс: с 10:00 до 19:00</p>
 
-    <!-- контакты  -->
-    <section class="contacts">
-      <h2 class="title">Контактная информация</h2>
+          <a class="button" href="#">Как проехать</a>
+          <a class="button" href="#">Обратная связь</a>
+        </section>
 
-      <p class="contacts__text">Барбершоп «Бородинский»<br>
-        Адрес: г. санкт-петербург, б. конюшенная, д. 19/8<br>
-        телефон: <a href="tel:88126660266">+7 (812) 666-02-66</a></p>
-
-      <p class="contacts__text">Время работы:<br>
-        пн—пт: с 10:00 до 22:00<br>
-        сб—вс: с 10:00 до 19:00</p>
-
-      <a class="button" href="#">Как проехать</a>
-      <a class="button" href="#">Обратная связь</a>
-    </section>
-
-    <!-- записаться  -->
-    <section class="appointment">
-      <h2 class="title">Записаться</h2>
-      <p class="appointment__text">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-      <!-- форма обратной связи  -->
-      <form class="form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="form__label">Дата
-          <input class="form__input" type="date">
-        </label>
-        <label class="form__label">Время
-          <input class="form__input" type="time">
-        </label>
-        <label class="form__label">Имя
-          <input class="form__input" type="text">
-        </label>
-        <label class="form__label">Телефон
-          <input class="form__input" type="tel">
-        </label>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-    </section>
-
+        <!-- записаться  -->
+        <section class="appointment">
+          <h2 class="title">Записаться</h2>
+          <p class="appointment__text">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+          <!-- форма обратной связи  -->
+          <form class="form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="form__label">Дата
+              <input class="form__input" type="date">
+            </label>
+            <label class="form__label">Время
+              <input class="form__input" type="time">
+            </label>
+            <label class="form__label">Имя
+              <input class="form__input" type="text">
+            </label>
+            <label class="form__label">Телефон
+              <input class="form__input" type="tel">
+            </label>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </main>
   <!-- подвал -->
   <footer class="footer">
