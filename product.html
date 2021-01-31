@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page--inner" lang="ru">
+<html class="page page--inner" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,34 +9,38 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body-grid">
   <!-- шапка  -->
   <header class="header">
-    <div class="wrapper">
-      <!-- основная навигация -->
-      <nav class="navigation">
-        <!-- логотип  -->
-        <a class="navigation__logo-link" href="index.html">
-          <img class="navigation__logo-image" src="img/logo.svg" alt="логотип барбершопа Бородинский" width="111"
-            height="24">
-        </a>
-        <!-- список пунктов меню  -->
-        <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
-          <li class="navigation__item"><a class="navigation__link">Магазин</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-        </ul>
-        <!-- авторизация  -->
-        <a class="navigation__link  navigation__login" href="#">Вход</a>
-      </nav>
-    </div>
+    <nav class="navigation navigation-grid">
+
+      <a class="navigation__logo-link">
+        <img class="navigation__logo-image" src="img/logo.svg" alt="логотип барбершопа Бородинский" width="111"
+          height="24">
+      </a>
+
+      <div class="header__wrap">
+        <div class="header__wrapper-grid">
+
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
+            <li class="navigation__item"><a class="navigation__link">Магазин</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+
+          <a class="navigation__link  navigation__login" href="#">Вход</a>
+
+        </div>
+      </div>
+    </nav>
   </header>
 
   <!-- контентная часть -->
   <main>
     <div class="wrapper">
+      <div class="content-grid  content-grid--product">
       <!-- заголовок страницы  -->
       <h1 class="title">Набор для путешествий «Baxter of California»</h1>
 
@@ -51,7 +55,7 @@
       <article class="product">
 
         <!-- фотогалерея  -->
-        <div class="product-wrap">
+        <div class="product__photo">
           <figure class="product__main-wrap">
             <a class="product__main-link" href="#">
               <img class="product__main-img" src="img/product/1.jpg" alt="Baxter of California главное фото" width="460"
@@ -80,7 +84,7 @@
         </div>
 
         <!-- описание товара  -->
-        <div class="product-wrap">
+        <div class="product__info">
 
           <div class="product__details">
             <!-- наличие товара  -->
@@ -114,11 +118,12 @@
           </ul>
         </div>
       </article>
+      </div>
     </div>
   </main>
   <!-- подвал -->
   <footer class="footer">
-    <div class="wrapper">
+    <div class="wrapper  footer-grid">
       <!-- контактная информация  -->
       <div class="footer__contacts">
         <p class="text">Барбершоп «Бородинский»<br>

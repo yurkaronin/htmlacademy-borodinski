@@ -10,32 +10,35 @@
 
 </head>
 
-<body>
+<body class="body-grid">
   <!-- шапка  -->
   <header class="header">
-    <div class="wrapper">
-      <!-- основная навигация -->
-      <nav class="navigation">
-        <!-- логотип  -->
-        <a class="navigation__logo-link">
-          <img class="navigation__logo-image" src="img/logo-index.svg" alt="логотип барбершопа Бородинский" width="371"
-            height="155">
-        </a>
-        <!-- список пунктов меню  -->
-        <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Магазин</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-        </ul>
-        <!-- авторизация  -->
-        <a class="navigation__link  navigation__login" href="#">Вход</a>
-      </nav>
-    </div>
+    <nav class="navigation navigation-grid">
+
+      <a class="navigation__logo-link">
+        <img class="navigation__logo-image" src="img/logo-index.svg" alt="логотип барбершопа Бородинский" width="371"
+          height="155">
+      </a>
+
+      <div class="header__wrap">
+        <div class="header__wrapper-grid">
+
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="catalog.html">Магазин</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+
+          <a class="navigation__link  navigation__login" href="#">Вход</a>
+
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
+  <main class="content">
     <div class="wrapper">
       <!-- заголовок страницы  -->
       <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
@@ -43,7 +46,7 @@
       <!-- преимущества  -->
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества барбершопа</h2>
-        <ul class="advantages__list">
+        <ul class="advantages__list advantages-grid">
           <li class="advantages__item">
             <span class="title">Быстро</span>
             <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной
@@ -61,7 +64,7 @@
           </li>
         </ul>
       </section>
-      <div class="sections-wrapper">
+      <div class="sections-wrapper content__wrapper-grid">
         <!-- новости  -->
         <section class="news">
           <h2 class="title">Новости</h2>
@@ -105,7 +108,7 @@
           <button class="button" type="button">Вперёд</button>
         </section>
       </div>
-      <div class="sections-wrapper">
+      <div class="sections-wrapper content__wrapper-grid">
         <!-- контакты  -->
         <section class="contacts">
           <h2 class="title">Контактная информация</h2>
@@ -148,7 +151,7 @@
   </main>
   <!-- подвал -->
   <footer class="footer">
-    <div class="wrapper">
+    <div class="wrapper  footer-grid">
       <!-- контактная информация  -->
       <div class="footer__contacts">
         <p class="text">Барбершоп «Бородинский»<br>

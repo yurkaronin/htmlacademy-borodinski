@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page--inner" lang="ru">
+<html class="page page--inner" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,29 +9,32 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body-grid">
   <!-- шапка  -->
   <header class="header">
-    <div class="wrapper">
-      <!-- основная навигация -->
-      <nav class="navigation">
-        <!-- логотип  -->
-        <a class="navigation__logo-link" href="index.html">
-          <img class="navigation__logo-image" src="img/logo.svg" alt="логотип барбершопа Бородинский" width="111"
-            height="24">
-        </a>
-        <!-- список пунктов меню  -->
-        <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
-          <li class="navigation__item"><a class="navigation__link">Прайс-лист</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Магазин</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-        </ul>
-        <!-- авторизация  -->
-        <a class="navigation__link  navigation__login" href="#">Вход</a>
-      </nav>
-    </div>
+    <nav class="navigation navigation-grid">
+
+      <a class="navigation__logo-link">
+        <img class="navigation__logo-image" src="img/logo.svg" alt="логотип барбершопа Бородинский" width="111"
+          height="24">
+      </a>
+
+      <div class="header__wrap">
+        <div class="header__wrapper-grid">
+
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
+            <li class="navigation__item"><a class="navigation__link">Прайс-лист</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="catalog.html">Магазин</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+
+          <a class="navigation__link  navigation__login" href="#">Вход</a>
+
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -41,7 +44,7 @@
 
       <!-- хлебные крошки  -->
       <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link"  href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
         <li class="breadcrumbs__item"><a class="breadcrumbs__link">Прайс-лист</a></li>
       </ul>
 
@@ -97,7 +100,7 @@
   </main>
   <!-- подвал -->
   <footer class="footer">
-    <div class="wrapper">
+    <div class="wrapper  footer-grid">
       <!-- контактная информация  -->
       <div class="footer__contacts">
         <p class="text">Барбершоп «Бородинский»<br>

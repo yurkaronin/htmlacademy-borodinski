@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page--inner" lang="ru">
+<html class="page page--inner" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -10,194 +10,203 @@
 
 </head>
 
-<body>
+<body class="body-grid">
   <!-- шапка  -->
   <header class="header">
-    <div class="wrapper">
-      <!-- основная навигация -->
-      <nav class="navigation">
-        <!-- логотип  -->
-        <a class="navigation__logo-link" href="index.html">
-          <img class="navigation__logo-image" src="img/logo.svg" alt="логотип барбершопа Бородинский" width="111"
-            height="24">
-        </a>
-        <!-- список пунктов меню  -->
-        <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
-          <li class="navigation__item"><a class="navigation__link">Магазин</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-        </ul>
-        <!-- авторизация  -->
-        <a class="navigation__link  navigation__login" href="#">Вход</a>
-      </nav>
-    </div>
+    <nav class="navigation navigation-grid">
+
+      <a class="navigation__logo-link">
+        <img class="navigation__logo-image" src="img/logo.svg" alt="логотип барбершопа Бородинский" width="111"
+          height="24">
+      </a>
+
+      <div class="header__wrap">
+        <div class="header__wrapper-grid">
+
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
+            <li class="navigation__item"><a class="navigation__link">Магазин</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+
+          <a class="navigation__link  navigation__login" href="#">Вход</a>
+
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
     <div class="wrapper">
-      <!-- заголовок страницы  -->
-      <h1 class="title">Средства для ухода</h1>
+      <div class="content-grid">
+        <!-- заголовок страницы  -->
+        <h1 class="title">Средства для ухода</h1>
 
-      <!-- хлебные крошки  -->
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="shop.html">Магазин</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link">Средства для входа</a></li>
-      </ul>
-
-      <!-- фильтр товаров  -->
-      <section class="filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__group-wrapper">
-            <legend class="form__group-title">Производители</legend>
-            <label class="form__label">
-              <input type="checkbox" name="baxter" value="Baxter of California" checked>Baxter of California
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="natty" value="Mr Natty">Mr Natty
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="suavecito" value="Suavecito" checked>Suavecito
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="malingoetz" value="Malin+Goetz">Malin+Goetz
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="murray" value="Murray’s">Murray’s
-            </label>
-            <label class="form__label">
-              <input type="checkbox" name="americancrew" value="American Crew" checked>American Crew
-            </label>
-          </fieldset>
-
-          <fieldset class="form__group-wrapper">
-            <legend class="form__group-title">Группы товаров:</legend>
-
-            <label class="form__label">
-              <input type="radio" name="catalog-group" value="Бритвенные принадлежности" checked>Бритвенные
-              принадлежности
-            </label>
-            <label class="form__label">
-              <input type="radio" name="catalog-group" value="Средства для ухода">Средства для ухода
-            </label>
-            <label class="form__label">
-              <input type="radio" name="catalog-group" value="Бритвенные принадлежности">Аксессуары
-            </label>
-          </fieldset>
-
-          <button class="button" type="submit">Показать</button>
-        </form>
-      </section>
-
-      <!-- список карточек для ухода  -->
-      <section class="catalog">
-        <h2 class="visually-hidden">Список средств для ухода</h2>
-        <!-- карточки товаров  -->
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <article class="card-product">
-              <a class="card-product__link" href="product.html">
-                <img class="card-product__img" src="img/shop/1.jpg" alt="фото товара" width="220" height="165">
-                <h3 class="card-product__name">Набор для путешествий
-                  «Baxter of California»</h3>
-              </a>
-              <div>
-                <span class="decision__price">2 900 ₽</span>
-                <button class="button" type="button">В корзину</button>
-              </div>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="card-product">
-              <a class="card-product__link" href="product.html">
-                <img class="card-product__img" src="img/shop/2.jpg" alt="Baxter of California" width="220" height="165">
-                <h3 class="card-product__name">Увлажняющий кондиционер
-                  «Baxter of California»</h3>
-              </a>
-              <div>
-                <span class="decision__price">750 ₽</span>
-                <button class="button" type="button">В корзину</button>
-              </div>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="card-product">
-              <a class="card-product__link" href="product.html">
-                <img class="card-product__img" src="img/shop/3.jpg" alt="suavecito" width="220" height="165">
-                <h3 class="card-product__name">Гель для волос
-                  «SUAVECITO»</h3>
-              </a>
-              <div>
-                <span class="decision__price">290 ₽</span>
-                <button class="button" type="button">В корзину</button>
-              </div>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="card-product">
-              <a class="card-product__link" href="product.html">
-                <img class="card-product__img" src="img/shop/4.jpg" alt="глина american crew" width="220" height="165">
-                <h3 class="card-product__name">Глина для укладки волос
-                  «American crew»</h3>
-              </a>
-              <div>
-                <span class="decision__price">500 ₽</span>
-                <button class="button" type="button">В корзину</button>
-              </div>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="card-product">
-              <a class="card-product__link" href="product.html">
-                <img class="card-product__img" src="img/shop/5.jpg" alt="гель american crew" width="220" height="165">
-                <h3 class="card-product__name">Гель для волос
-                  «AMERICAN CREW»</h3>
-              </a>
-              <div>
-                <span class="decision__price">300 ₽</span>
-                <button class="button" type="button">В корзину</button>
-              </div>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="card-product">
-              <a class="card-product__link" href="product.html">
-                <img class="card-product__img" src="img/shop/6.jpg" alt="Baxter of California" width="220" height="165">
-                <h3 class="card-product__name">Набор для бритья
-                  «Baxter of California»</h3>
-              </a>
-              <div class="decision">
-                <span class="decision__price">3 900 ₽</span>
-                <button class="button" type="button">В корзину</button>
-              </div>
-            </article>
-          </li>
+        <!-- хлебные крошки  -->
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="shop.html">Магазин</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link">Средства для входа</a></li>
         </ul>
 
-        <!-- постраничная пагинация  -->
-        <ul class="pagination">
-          <li class="pagination__item">
-            <a class="pagination__link" href="">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="">4</a>
-          </li>
-        </ul>
-      </section>
+        <!-- фильтр товаров  -->
+        <section class="filter">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form class="form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="form__group-wrapper">
+              <legend class="form__group-title">Производители</legend>
+              <label class="form__label">
+                <input type="checkbox" name="baxter" value="Baxter of California" checked>Baxter of California
+              </label>
+              <label class="form__label">
+                <input type="checkbox" name="natty" value="Mr Natty">Mr Natty
+              </label>
+              <label class="form__label">
+                <input type="checkbox" name="suavecito" value="Suavecito" checked>Suavecito
+              </label>
+              <label class="form__label">
+                <input type="checkbox" name="malingoetz" value="Malin+Goetz">Malin+Goetz
+              </label>
+              <label class="form__label">
+                <input type="checkbox" name="murray" value="Murray’s">Murray’s
+              </label>
+              <label class="form__label">
+                <input type="checkbox" name="americancrew" value="American Crew" checked>American Crew
+              </label>
+            </fieldset>
+
+            <fieldset class="form__group-wrapper">
+              <legend class="form__group-title">Группы товаров:</legend>
+
+              <label class="form__label">
+                <input type="radio" name="catalog-group" value="Бритвенные принадлежности" checked>Бритвенные
+                принадлежности
+              </label>
+              <label class="form__label">
+                <input type="radio" name="catalog-group" value="Средства для ухода">Средства для ухода
+              </label>
+              <label class="form__label">
+                <input type="radio" name="catalog-group" value="Бритвенные принадлежности">Аксессуары
+              </label>
+            </fieldset>
+
+            <button class="button" type="submit">Показать</button>
+          </form>
+        </section>
+
+        <!-- список карточек для ухода  -->
+        <section class="catalog">
+          <h2 class="visually-hidden">Список средств для ухода</h2>
+          <!-- карточки товаров  -->
+          <ul class="catalog__list catalog__card-grid">
+            <li class="catalog__item">
+              <article class="card-product">
+                <a class="card-product__link" href="product.html">
+                  <img class="card-product__img" src="img/shop/1.jpg" alt="фото товара" width="220" height="165">
+                  <h3 class="card-product__name">Набор для путешествий
+                    «Baxter of California»</h3>
+                </a>
+                <div>
+                  <span class="decision__price">2 900 ₽</span>
+                  <button class="button" type="button">В корзину</button>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="card-product">
+                <a class="card-product__link" href="product.html">
+                  <img class="card-product__img" src="img/shop/2.jpg" alt="Baxter of California" width="220"
+                    height="165">
+                  <h3 class="card-product__name">Увлажняющий кондиционер
+                    «Baxter of California»</h3>
+                </a>
+                <div>
+                  <span class="decision__price">750 ₽</span>
+                  <button class="button" type="button">В корзину</button>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="card-product">
+                <a class="card-product__link" href="product.html">
+                  <img class="card-product__img" src="img/shop/3.jpg" alt="suavecito" width="220" height="165">
+                  <h3 class="card-product__name">Гель для волос
+                    «SUAVECITO»</h3>
+                </a>
+                <div>
+                  <span class="decision__price">290 ₽</span>
+                  <button class="button" type="button">В корзину</button>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="card-product">
+                <a class="card-product__link" href="product.html">
+                  <img class="card-product__img" src="img/shop/4.jpg" alt="глина american crew" width="220"
+                    height="165">
+                  <h3 class="card-product__name">Глина для укладки волос
+                    «American crew»</h3>
+                </a>
+                <div>
+                  <span class="decision__price">500 ₽</span>
+                  <button class="button" type="button">В корзину</button>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="card-product">
+                <a class="card-product__link" href="product.html">
+                  <img class="card-product__img" src="img/shop/5.jpg" alt="гель american crew" width="220" height="165">
+                  <h3 class="card-product__name">Гель для волос
+                    «AMERICAN CREW»</h3>
+                </a>
+                <div>
+                  <span class="decision__price">300 ₽</span>
+                  <button class="button" type="button">В корзину</button>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="card-product">
+                <a class="card-product__link" href="product.html">
+                  <img class="card-product__img" src="img/shop/6.jpg" alt="Baxter of California" width="220"
+                    height="165">
+                  <h3 class="card-product__name">Набор для бритья
+                    «Baxter of California»</h3>
+                </a>
+                <div class="decision">
+                  <span class="decision__price">3 900 ₽</span>
+                  <button class="button" type="button">В корзину</button>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <!-- постраничная пагинация  -->
+          <ul class="pagination">
+            <li class="pagination__item">
+              <a class="pagination__link" href="">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="">4</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
     </div>
   </main>
   <!-- подвал -->
   <footer class="footer">
-    <div class="wrapper">
+    <div class="wrapper  footer-grid">
       <!-- контактная информация  -->
       <div class="footer__contacts">
         <p class="text">Барбершоп «Бородинский»<br>
