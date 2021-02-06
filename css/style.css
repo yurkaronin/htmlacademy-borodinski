@@ -662,3 +662,22 @@ input[type="radio"].visually-hidden {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
 }
+
+.decision {
+  display: flex;
+}
+
+.catalog .decision  .button {
+  padding: 10px 18px 9px;
+}
+
+.catalog .decision__price {
+  padding: 10px 34px 9px;
+}
+
+.page .header .wrapper {
+  max-width: 100%;
+    padding: 0;
+}
+
+

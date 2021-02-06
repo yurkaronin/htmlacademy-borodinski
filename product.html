@@ -7,117 +7,139 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#000000">
 </head>
 
 <body class="body-grid">
   <!-- шапка  -->
   <header class="header">
-    <nav class="navigation navigation-grid">
+    <div class="wrapper">
+      <nav class="navigation navigation-grid">
 
-      <a class="navigation__logo-link">
-        <img class="navigation__logo-image" src="img/logo.svg" alt="логотип барбершопа Бородинский" width="111"
-          height="24">
-      </a>
+        <a href="index.html" class="navigation__logo-link">
+          <img class="navigation__logo-image" src="img/logo.svg" alt="логотип барбершопа Бородинский" width="111"
+            height="24">
+        </a>
 
-      <div class="header__wrap">
-        <div class="header__wrapper-grid">
+        <div class="header__wrap">
+          <div class="header__wrapper-grid">
 
-          <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
-            <li class="navigation__item"><a class="navigation__link">Магазин</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-          </ul>
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="price.html">Прайс-лист</a></li>
+              <li class="navigation__item"><a class="navigation__link">Магазин</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+            </ul>
 
-          <a class="navigation__link  navigation__login" href="#">Вход</a>
+            <a class="navigation__link  navigation__login" href="#">Вход</a>
 
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <!-- контентная часть -->
   <main>
     <div class="wrapper">
       <div class="content-grid  content-grid--product">
-      <!-- заголовок страницы  -->
-      <h1 class="title">Набор для путешествий «Baxter of California»</h1>
+        <!-- заголовок страницы  -->
+        <h1 class="title">Набор для путешествий «Baxter of California»</h1>
 
-      <!-- хлебные крошки  -->
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Магазин</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Средства для ухода</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link">Набор для путешествий «Baxter of California»</a></li>
-      </ul>
+        <!-- хлебные крошки  -->
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Магазин</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Средства для ухода</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link">Набор для путешествий «Baxter of California»</a>
+          </li>
+        </ul>
 
-      <article class="product">
+        <article class="product">
 
-        <!-- фотогалерея  -->
-        <div class="product__photo">
-          <figure class="product__main-wrap">
-            <a class="product__main-link" href="#">
-              <img class="product__main-img" src="img/product/1.jpg" alt="Baxter of California главное фото" width="460"
-                height="498">
-            </a>
-          </figure>
-
-          <!-- дополнительные фото  -->
-          <ul class="product__photo-storage">
-            <li class="product__storage-item">
-              <a class="product__storage-link" href="#">
-                <img class="product__storage-image" src="img/product/2.jpg" alt="вид сбоку" width="140" height="149">
+          <!-- фотогалерея  -->
+          <div class="product__photo">
+            <figure class="product__main-wrap">
+              <a class="product__main-link" href="#">
+                <img class="product__main-img" src="img/product/1.jpg" alt="Baxter of California главное фото"
+                  width="460" height="498">
               </a>
-            </li>
-            <li class="product__storage-item">
-              <a class="product__storage-link" href="#">
-                <img class="product__storage-image" src="img/product/3.jpg" alt="вид сверху" width="140" height="149">
-              </a>
-            </li>
-            <li class="product__storage-item">
-              <a class="product__storage-link" href="#">
-                <img class="product__storage-image" src="img/product/4.jpg" alt="вид снизу" width="140" height="149">
-              </a>
-            </li>
-          </ul>
-        </div>
+            </figure>
 
-        <!-- описание товара  -->
-        <div class="product__info">
-
-          <div class="product__details">
-            <!-- наличие товара  -->
-            <span class="product__stock">Есть в наличии</span>
-
-            <!-- артикул товара  -->
-            <span class="product__art">Артикул:DEXTER-AE</span>
-          </div>
-          <!-- текст с описанием  -->
-          <p class="product__desc">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной
-            сумке находится все,
-            что
-            нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий
-            крем,
-            крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-
-          <!-- цена и кнопка купить  -->
-          <div class="decision">
-            <span class="decision__price">2 900 ₽</span>
-            <button class="button" type="button">В корзину</button>
+            <!-- дополнительные фото  -->
+            <ul class="product__photo-storage">
+              <li class="product__storage-item">
+                <a class="product__storage-link" href="#">
+                  <img class="product__storage-image" src="img/product/2.jpg" alt="вид сбоку" width="140" height="149">
+                </a>
+              </li>
+              <li class="product__storage-item">
+                <a class="product__storage-link" href="#">
+                  <img class="product__storage-image" src="img/product/3.jpg" alt="вид сверху" width="140" height="149">
+                </a>
+              </li>
+              <li class="product__storage-item">
+                <a class="product__storage-link" href="#">
+                  <img class="product__storage-image" src="img/product/4.jpg" alt="вид снизу" width="140" height="149">
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <!-- комплектация товара  -->
-          <h3 class="product__subtitle">В набор входят:</h3>
-          <ul class="product__set-list">
-            <li>Средство для умывания (50 мл)</li>
-            <li>Увлажняющий крем (50 мл)</li>
-            <li>Крем для бритья (50 мл)</li>
-            <li>Крем после бритья, шампунь (50 мл)</li>
-            <li>Удобная кожаная косметичка</li>
-          </ul>
-        </div>
-      </article>
+          <!-- описание товара  -->
+          <div class="product__info">
+
+            <div class="product__details">
+              <!-- наличие товара  -->
+              <span class="product__stock">Есть в наличии</span>
+
+              <!-- артикул товара  -->
+              <span class="product__art">Артикул:DEXTER-AE</span>
+            </div>
+            <!-- текст с описанием  -->
+            <p class="product__desc">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной
+              кожаной
+              сумке находится все,
+              что
+              нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий
+              крем,
+              крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+
+            <!-- цена и кнопка купить  -->
+            <div class="decision">
+              <span class="decision__price">2 900 ₽</span>
+              <button class="button" type="button">В корзину</button>
+            </div>
+
+            <!-- комплектация товара  -->
+            <h3 class="product__subtitle">В набор входят:</h3>
+            <ul class="product__set-list">
+              <li>Средство для умывания (50 мл)</li>
+              <li>Увлажняющий крем (50 мл)</li>
+              <li>Крем для бритья (50 мл)</li>
+              <li>Крем после бритья, шампунь (50 мл)</li>
+              <li>Удобная кожаная косметичка</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </div>
   </main>
