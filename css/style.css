@@ -409,10 +409,20 @@ input[type="radio"].visually-hidden {
 
 .footer__copyright {
   text-align: center;
+  justify-self: right;
+  max-width: 150px;
 }
 
 .footer__social {
   text-align: center;
+  max-width: 141px;
+  justify-self: center;
+  width: 100%;
+}
+
+.footer__title {
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
 /* социальные сети  */
@@ -700,22 +710,6 @@ input[type="radio"].visually-hidden {
 
 .footer__contacts {
   max-width: 320px;
-}
-
-.footer__title {
-  display: inline-block;
-  margin-bottom: 12px;
-}
-
-.footer__social {
-  max-width: 141px;
-  justify-self: center;
-  width: 100%;
-}
-
-.footer__copyright {
-  justify-self: right;
-  max-width: 150px;
 }
 
 /* внутренние странички  */
