@@ -581,6 +581,8 @@ input[type="radio"].visually-hidden {
 .card-product__link {
   color: inherit;
   text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .card-product__name {
@@ -589,6 +591,8 @@ input[type="radio"].visually-hidden {
   color: inherit;
   margin: 0;
   text-transform: none;
+  margin-bottom: 5px;
+  padding: 0 18px;
 }
 .decision__price {
   background-color: #e5e5e5;
@@ -605,6 +609,14 @@ input[type="radio"].visually-hidden {
 .card-product {
   background: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog__item {
+  min-height: 220px;
 }
 
 /* фильтр каталога  */
@@ -615,7 +627,6 @@ input[type="radio"].visually-hidden {
   column-gap: 0;
   row-gap: 0;
 }
-
 
 .form__group-wrapper {
   padding: 0;
@@ -633,48 +644,48 @@ input[type="radio"].visually-hidden {
 }
 
 .page--inner .filter__button {
-    grid-column: span 1;
-    margin: 0;
-    width: 112px;
-    padding: 9px;
+  grid-column: span 1;
+  margin: 0;
+  width: 112px;
+  padding: 9px;
 }
 
 .filter .form__label-wrap {
-    margin-bottom: 19px;
-    position: relative;
-    padding-left: 40px;
-    cursor: pointer;
-    user-select: none;
-    display: flex;
-    align-items: center;
+  margin-bottom: 19px;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
 }
 
-.form__group-wrapper input[type=checkbox]+.form__label-wrap::before {
-    background-image: url("../img/icons/checkbox-off.svg");
-    position: absolute;
-    left: 0;
-    width: 23px;
-    height: 23px;
-    content: "";
-    background-repeat: no-repeat;
+.form__group-wrapper input[type="checkbox"] + .form__label-wrap::before {
+  background-image: url("../img/icons/checkbox-off.svg");
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  content: "";
+  background-repeat: no-repeat;
 }
 
-.form__group-wrapper input[type=checkbox]:checked+.form__label-wrap::before {
-    background-image: url("../img/icons/checkbox-on.svg");
+.form__group-wrapper input[type="checkbox"]:checked + .form__label-wrap::before {
+  background-image: url("../img/icons/checkbox-on.svg");
 }
 
-.form__group-wrapper input[type=radio]+.form__label-wrap::before {
-    background-image: url("../img/icons/radio-off.svg");
-    position: absolute;
-    left: 0;
-    width: 23px;
-    height: 23px;
-    content: "";
-    background-repeat: no-repeat;
+.form__group-wrapper input[type="radio"] + .form__label-wrap::before {
+  background-image: url("../img/icons/radio-off.svg");
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  content: "";
+  background-repeat: no-repeat;
 }
 
-.form__group-wrapper input[type=radio]:checked+.form__label-wrap::before {
-    background-image: url("../img/icons/radio-on.svg");
+.form__group-wrapper input[type="radio"]:checked + .form__label-wrap::before {
+  background-image: url("../img/icons/radio-on.svg");
 }
 
 /* постраничная пагинация  */
@@ -849,6 +860,7 @@ input[type="radio"].visually-hidden {
 
 .catalog {
   margin-left: 60px;
+  width: 700px;
 }
 
 .catalog__card-grid {
@@ -882,6 +894,8 @@ input[type="radio"].visually-hidden {
 
 .decision {
   display: flex;
+  padding: 15px;
+  padding: 0px 17px 16px;
 }
 
 .catalog .decision .button {
@@ -889,7 +903,9 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog .decision__price {
-  padding: 10px 34px 9px;
+  padding: 10px;
+  text-align: center;
+  width: 109px;
 }
 
 .page--inner .header__wrap {
@@ -900,6 +916,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 
-.filter__form {
+.card-product__img {
+  margin-bottom: 5px;
+}
 
+.card-product__name span {
+  text-transform: uppercase;
+  display: block;
 }
