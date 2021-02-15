@@ -608,9 +608,19 @@ input[type="radio"].visually-hidden {
 }
 
 /* фильтр каталога  */
+
+.page--inner .form {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 0;
+}
+
+
 .form__group-wrapper {
   padding: 0;
   border: none;
+  margin-bottom: 32px;
 }
 
 .form__group-title {
@@ -619,6 +629,52 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   color: #000000;
   display: block;
+  margin-bottom: 29px;
+}
+
+.page--inner .filter__button {
+    grid-column: span 1;
+    margin: 0;
+    width: 112px;
+    padding: 9px;
+}
+
+.filter .form__label-wrap {
+    margin-bottom: 19px;
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.form__group-wrapper input[type=checkbox]+.form__label-wrap::before {
+    background-image: url("../img/icons/checkbox-off.svg");
+    position: absolute;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    content: "";
+    background-repeat: no-repeat;
+}
+
+.form__group-wrapper input[type=checkbox]:checked+.form__label-wrap::before {
+    background-image: url("../img/icons/checkbox-on.svg");
+}
+
+.form__group-wrapper input[type=radio]+.form__label-wrap::before {
+    background-image: url("../img/icons/radio-off.svg");
+    position: absolute;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    content: "";
+    background-repeat: no-repeat;
+}
+
+.form__group-wrapper input[type=radio]:checked+.form__label-wrap::before {
+    background-image: url("../img/icons/radio-on.svg");
 }
 
 /* постраничная пагинация  */
