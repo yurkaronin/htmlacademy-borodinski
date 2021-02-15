@@ -693,6 +693,12 @@ input[type="radio"].visually-hidden {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination__item {
+  margin-right: 8px;
 }
 
 .pagination__link {
