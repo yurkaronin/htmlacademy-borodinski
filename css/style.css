@@ -155,7 +155,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 20px;
   background-color: transparent;
-  padding: 26px 22px;
+  padding: 25px 21px;
   text-align: center;
   display: block;
   position: relative;
@@ -189,6 +189,7 @@ input[type="radio"].visually-hidden {
   padding-left: 50px;
   display: flex;
   align-items: center;
+  padding-right: 0;
 }
 
 .navigation__login::before {
@@ -520,7 +521,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -728,7 +729,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
-  margin-bottom: 21px;
+  margin-bottom: 13px;
 }
 
 .product__photo-storage {
@@ -824,12 +825,12 @@ input[type="radio"].visually-hidden {
 }
 
 .page--inner .navigation-grid {
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 148px 1fr;
   align-items: baseline;
 }
 
 .page--inner main {
-  padding: 51px 0 49px;
+  padding: 51px 0 43px;
 }
 
 .content-grid {
@@ -844,7 +845,7 @@ input[type="radio"].visually-hidden {
 .product {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 80px;
+  column-gap: 88px;
 }
 
 .product__photo {
@@ -854,6 +855,8 @@ input[type="radio"].visually-hidden {
 
 .product__info {
   width: 390px;
+  padding-top: 11px;
+  padding-right: 15px;
 }
 
 .content-grid .title {
@@ -878,7 +881,7 @@ input[type="radio"].visually-hidden {
 
 .product__desc {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 }
 
 .product__details {
@@ -929,4 +932,49 @@ input[type="radio"].visually-hidden {
 .card-product__name span {
   text-transform: uppercase;
   display: block;
+}
+
+.product__info .decision {
+  padding: 0;
+}
+
+.product__info .button {
+  width: 78px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.product__info .decision__price {
+  background-color: #e5e5e5;
+  padding: 10px 15px;
+  text-align: center;
+  width: 110px;
+}
+
+.product__subtitle {
+  margin-bottom: 25px;
+}
+
+.product__set-list li {
+  position: relative;
+  margin-left: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.product__set-list li::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  display: block;
+  background-color: #000000;
+  transform: rotate(45deg);
+  left: -18px;
+}
+
+.page--inner .header__wrapper-grid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
