@@ -4,17 +4,21 @@
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/pt-sans-narrow-v12-latin_cyrillic-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/pt-sans-narrow-v12-latin_cyrillic-regular.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/pt-sans-narrow-v12-latin_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
 }
+
 /* pt-sans-narrow-700 - latin_cyrillic */
 @font-face {
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 700;
   src: local(""), url("../fonts/pt-sans-narrow-v12-latin_cyrillic-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/pt-sans-narrow-v12-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/pt-sans-narrow-v12-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
 }
 
@@ -131,8 +135,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* шапка  */
-.header {
-}
+.header {}
 
 .header__wrap {
   background-color: #000000;
@@ -189,7 +192,7 @@ input[type="radio"].visually-hidden {
   padding-left: 50px;
   display: flex;
   align-items: center;
-  padding-right: 0;
+  padding-right: 20px;
 }
 
 .navigation__login::before {
@@ -469,10 +472,12 @@ input[type="radio"].visually-hidden {
   column-gap: 20px;
   row-gap: 10px;
 }
+
 .form__label {
   display: flex;
   flex-direction: column;
 }
+
 .form__input {
   border: 2px solid #000000;
   font-weight: 700;
@@ -481,13 +486,6 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.5);
   padding: 10px 17px 9px;
   position: relative;
-}
-
-.filter .form__label {
-  font-size: 14px;
-  line-height: 18px;
-  display: block;
-  margin: 0;
 }
 
 .form .button {
@@ -532,6 +530,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.breadcrumbs__item:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs__item::after {
@@ -595,6 +597,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 5px;
   padding: 0 18px;
 }
+
 .decision__price {
   background-color: #e5e5e5;
   padding: 13px 35px 12px;
@@ -621,6 +624,23 @@ input[type="radio"].visually-hidden {
 }
 
 /* фильтр каталога  */
+.filter {
+  max-width: 167px;
+  width: 100%;
+}
+
+.filter .form__label {
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  margin: 0;
+}
+
+.filter .form__label:hover,
+.filter .form__label:active,
+.filter .form__label:focus {
+  color: #663D15;
+}
 
 .page--inner .form {
   display: grid;
@@ -632,6 +652,7 @@ input[type="radio"].visually-hidden {
 .form__group-wrapper {
   padding: 0;
   border: none;
+  margin: 0;
   margin-bottom: 32px;
 }
 
@@ -661,7 +682,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-.form__group-wrapper input[type="checkbox"] + .form__label-wrap::before {
+.form__group-wrapper input[type="checkbox"]+.form__label-wrap::before {
   background-image: url("../img/icons/checkbox-off.svg");
   position: absolute;
   left: 0;
@@ -671,11 +692,11 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.form__group-wrapper input[type="checkbox"]:checked + .form__label-wrap::before {
+.form__group-wrapper input[type="checkbox"]:checked+.form__label-wrap::before {
   background-image: url("../img/icons/checkbox-on.svg");
 }
 
-.form__group-wrapper input[type="radio"] + .form__label-wrap::before {
+.form__group-wrapper input[type="radio"]+.form__label-wrap::before {
   background-image: url("../img/icons/radio-off.svg");
   position: absolute;
   left: 0;
@@ -685,7 +706,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.form__group-wrapper input[type="radio"]:checked + .form__label-wrap::before {
+.form__group-wrapper input[type="radio"]:checked+.form__label-wrap::before {
   background-image: url("../img/icons/radio-on.svg");
 }
 
@@ -700,6 +721,10 @@ input[type="radio"].visually-hidden {
 
 .pagination__item {
   margin-right: 8px;
+}
+
+.pagination__item:last-child {
+  margin-right: 0;
 }
 
 .pagination__link {
@@ -757,6 +782,13 @@ input[type="radio"].visually-hidden {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.product__storage-image {
+  display: block;
+  width: 140px;
+  height: 149px;
+  object-fit: cover;
 }
 
 /* сетка на гридах  */
