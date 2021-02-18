@@ -135,8 +135,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* шапка  */
-.header {}
-
 .header__wrap {
   background-color: #000000;
   color: #ffffff;
