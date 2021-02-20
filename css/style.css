@@ -107,6 +107,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 16px;
 }
 
+.text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .button {
   background: #000000;
   color: #ffffff;
@@ -491,27 +496,6 @@ input[type="radio"].visually-hidden {
   grid-column: span 2;
 }
 
-/* модалки  */
-.modal {
-  background-color: #f8f5f2;
-  color: #242424;
-}
-
-.modal-wrapper {
-  border: 7px solid #ffffff;
-  background-color: gray;
-}
-
-.form__link {
-  color: inherit;
-}
-
-.form__link:hover,
-.form__link:focus,
-.form__link:active {
-  text-decoration: none;
-}
-
 /* хлебные крошки  */
 .breadcrumbs {
   list-style: none;
@@ -680,7 +664,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-.form__group-wrapper input[type="checkbox"]+.form__label-wrap::before {
+.form input[type="checkbox"]+.form__label-wrap::before {
   background-image: url("../img/icons/checkbox-off.svg");
   position: absolute;
   left: 0;
@@ -690,11 +674,11 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.form__group-wrapper input[type="checkbox"]:checked+.form__label-wrap::before {
+.form input[type="checkbox"]:checked+.form__label-wrap::before {
   background-image: url("../img/icons/checkbox-on.svg");
 }
 
-.form__group-wrapper input[type="radio"]+.form__label-wrap::before {
+.form input[type="radio"]+.form__label-wrap::before {
   background-image: url("../img/icons/radio-off.svg");
   position: absolute;
   left: 0;
@@ -704,7 +688,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.form__group-wrapper input[type="radio"]:checked+.form__label-wrap::before {
+.form input[type="radio"]:checked+.form__label-wrap::before {
   background-image: url("../img/icons/radio-on.svg");
 }
 
@@ -1007,4 +991,120 @@ input[type="radio"].visually-hidden {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* модалки  */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #f8f5f2;
+  background-image: url(../img/bg/white.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  color: #242424;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.button-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  display: block;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button-close::after,
+.button-close::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 21px;
+  height: 4px;
+  background-color: #D0D0D0;
+}
+
+.button-close::before {
+  transform: rotate(45deg);
+}
+
+.button-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal--login {
+  display: none;
+  width: 460px;
+  padding: 46px 80px 58px;
+  top: 120px;
+  bottom: auto;
+
+}
+
+.modal--map {
+  display: none;
+  width: 766px;
+  height: 560px;
+  background-image: url(../img/map.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.75);
+}
+
+.modal-wrapper {
+  border: 7px solid #ffffff;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.form__link {
+  color: inherit;
+}
+
+.form__link:hover,
+.form__link:focus,
+.form__link:active {
+  text-decoration: none;
+}
+
+.login-form .form__label {
+  grid-column: span 2;
+
+}
+
+.login-form .form__input {
+  padding: 7px 15px;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.login-form .form__label--remember {
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding-left: 32px;
+  grid-column: span 1;
+  margin-top: 5px;
+}
+
+.login-form .form__link {
+  display: block;
+  grid-column: span 1;
+  justify-self: end;
+  margin-top: 5px;
+}
+
+.login-form .button {
+  margin-top: 4px;
 }
