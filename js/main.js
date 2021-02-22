@@ -1,46 +1,95 @@
-/* интерактивные элементы на страницах сайта */
-let loginLink = document.getElementById('user-login');
-let howToGet = document.getElementById('how-to-get');
-let howToFind = document.getElementById('how-to-find');
+/* Основные переменные для работы с кнопками и модалками */
+var buttonLogin = document.getElementById('user-login'); /* кнопка вызова модального окна авторизации*/
+var modalLogin = document.getElementById('modal-login'); /* Объявляем переменную и присваиваем ей значение -выбираем элемент в документе - модальное окно с формой */
+var closeBtn = document.getElementById('close-modal-login'); /* Объявляем переменную и присваиваем ей значение - выбираем кнопку закрытия окна в разметке */
 
-/* модальние окна/диалоговые окна */
-let modalLogin = document.getElementById('modal-login');
-let modalMap = document.getElementById('modal-map');
-/* кнопки закрывающие модальне окна */
-let closeModalMap = document.getElementById('close-modal-map');
-let closeModalLogin = document.getElementById('close-modal-login');
-/* модалка входа/авторизации */
-let form = modalLogin.querySelector('form');
-/* поля ввода внутри формы логина */
-let loginArea = modalLogin.querySelector('[name=login]');
-let passwordArea = modalLogin.querySelector('[name=password]');
-/* картинка из Mortal Combat */
-let toasty = document.getElementById('toasty');
+/* Улучшаем нашу форму */
+var loginInput = modalLogin.querySelector('[name=login]'); /* Объявление переменной. присваивание значения - поле ввода имени в модальном окне */
+var passwordInput = modalLogin.querySelector('[name=password]'); /* Объявление переменной. присваивание значения - поле ввода электропочты в модальном окне */
+var loginForm = modalLogin.querySelector('form'); /* Объявление переменной. присваивание значения - форма в модальном окне */
+var storage = localStorage.getItem('loginInput');
 
-/* показать или скрыть модальное окно логина */
-loginLink.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modalLogin.classList.add('modal-show');
+var isStorageSupport = true;
+var storage = '';
 
-  loginArea.focus();
+try {
+  storage = localStorage.getItem('loginInput');
+} catch (err) {
+  isStorageSupport = false;
+}
+
+/* Обработчик на открытие модального окна с контактной формой */
+buttonLogin.addEventListener('click', function (evt) {
+  evt.preventDefault(); /* отменяем действие по умолчанию - 'переход по ссылке при клике' */
+  modalLogin.classList.add('modal-show'); /* добавляем к модалке дополнительный класс, для того что бы форма отобразилась на странице */
+  if (storage) {
+    loginInput.value = storage;
+    passwordInput.focus(); /* вызываем метод 'Фокус' в поле ввода имени? но только ЕСЛИ у нас подставилось имя пользователя из Локального хранилища (Local Storage) в поле ввода имени */
+  } else {
+    loginInput.focus(); /* вызываем метод 'Фокус' в поле ввода имени, если оно ранее не подставилось из локального хранилища */
+  }
+
 });
-/* закрыть модальное окно логина */
-closeModalLogin.addEventListener('click', function (evt) {
+
+/* Обработчик на закрытие модального окна с формой */
+closeBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalLogin.classList.remove('modal-show');
   modalLogin.classList.remove('modal-error');
-  toasty.classList.remove('modal-show');
 });
-/* проверка полей формы на ввод данных */
-form.addEventListener('submit', function (evt) {
-  if (!loginArea.value || !passwordArea.value) {
-    evt.preventDefault();
 
+/* Обработчик отправки с условиями проверки */
+loginForm.addEventListener('submit', function (evt) {
+  if (!loginInput.value || !passwordInput.value) {
+    evt.preventDefault();
     modalLogin.classList.remove('modal-error');
     modalLogin.offsetWidth = modalLogin.offsetWidth; /* Вставляем костыль, для реализации бесконечного повтора анимации при ошибке заполнения формы - перезаписываем ширину окна на то же самое значение */
     modalLogin.classList.add('modal-error');
 
-    toasty.classList.add('modal-show');
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('loginInput', loginInput.value);
+    }
   }
+});
 
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (modalLogin.classList.contains('modal-show')) {
+      evt.preventDefault();
+      modalLogin.classList.remove('modal-show');
+      modalLogin.classList.remove('modal-error');
+    }
+  }
+});
+
+/* Модалка с картой  */
+var howToFind = document.getElementById('how-to-find');
+var howToGet = document.getElementById('how-to-get');
+
+var modalMap = document.getElementById('modal-map');
+var closeMap = document.getElementById('close-modal-map');
+
+howToFind.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalMap.classList.add('modal-show');
+});
+
+howToGet.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalMap.classList.add('modal-show');
+});
+
+closeMap.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalMap.classList.remove('modal-show');
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (modalMap.classList.contains('modal-show')) {
+      evt.preventDefault();
+      modalMap.classList.remove('modal-show');
+    }
+  }
 });

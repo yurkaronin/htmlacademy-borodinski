@@ -1239,7 +1239,7 @@ input[type="radio"].visually-hidden {
   right: 0;
 }
 
-/* .toasty::after {
+/* .toasty::before {
   content: '';
   background-color: #ffffff;
   width: 190px;
@@ -1247,6 +1247,9 @@ input[type="radio"].visually-hidden {
   color: inherit;
   font-family: inherit;
   display: block;
+  position: absolute;
+  top: -50px;
+  left: -50px;
 } */
 
 .modal-show {
