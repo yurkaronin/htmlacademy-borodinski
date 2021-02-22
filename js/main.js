@@ -65,7 +65,6 @@ window.addEventListener('keydown', function (evt) {
 
 /* Модалка с картой  */
 var howToFind = document.getElementById('how-to-find');
-var howToGet = document.getElementById('how-to-get');
 
 var modalMap = document.getElementById('modal-map');
 var closeMap = document.getElementById('close-modal-map');
@@ -74,11 +73,16 @@ howToFind.addEventListener('click', function (evt) {
   evt.preventDefault();
   modalMap.classList.add('modal-show');
 });
+if(document.getElementById('how-to-get')) {
+  var howToGet = document.getElementById('how-to-get');
+  howToGet.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalMap.classList.add('modal-show');
+  });
+}
 
-howToGet.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modalMap.classList.add('modal-show');
-});
+
+
 
 closeMap.addEventListener('click', function (evt) {
   evt.preventDefault();

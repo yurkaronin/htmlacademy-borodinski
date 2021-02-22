@@ -150,7 +150,7 @@
       <div class="footer__contacts">
         <p class="text">Барбершоп «Бородинский»<br>
           адрес: г. Санкт-Петербург, ул. б. Конюшенная, д. 19/8<br>
-          <a class="footer__link" href="#">как нас найти?</a><br>
+          <a class="footer__link" href="#" id="how-to-find">как нас найти?</a><br>
           <a class="footer__tel" href="tel:88126660266">телефон: +7 (812) 666-02-66</a></p>
       </div>
 
@@ -209,20 +209,22 @@
     <p class="text">Введите пожалуйста свой логин и пароль</p>
     <form class="form login-form" action="https://echo.htmlacademy.ru" method="get">
       <label class="form__label" aria-label="Логин">
-        <input class="form__input" type="text" placeholder="email@example.com">
+        <input class="form__input" type="text" placeholder="email@example.com" name="login">
       </label>
       <label class="form__label" aria-label="Пароль">
-        <input class="form__input" type="password">
+        <input class="form__input" type="password" name="password">
       </label>
 
       <label class="form__label  form__label--remember">
-        <input class="visually-hidden" type="checkbox" checked /><span class="form__label-wrap">Запомнить меня</span></label>
+        <input class="visually-hidden" type="checkbox" checked /><span class="form__label-wrap">Запомнить
+          меня</span></label>
 
       <a class="form__link" href="recovery.html">Я забыл пароль!</a>
 
       <button class="button" type="submit">Войти</button>
     </form>
-    <button class="button-close" type="button" title="Закрыть окно" aria-label="Закрыть окно"></button>
+    <button class="button-close" type="button" title="Закрыть окно" aria-label="Закрыть окно"
+      id="close-modal-login"></button>
   </section>
 
   <!-- Карта  -->
@@ -234,8 +236,14 @@
         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A035646bfae7d22da8bd9b4a44b756040967129c75682170e4246e8dd197d1c04&amp;width=766&amp;height=560&amp;lang=ru_RU&amp;scroll=true">
       </script>
     </div>
-    <button class="button-close" type="button" title="Закрыть окно" aria-label="Закрыть окно"></button>
+    <button class="button-close" type="button" title="Закрыть окно" aria-label="Закрыть окно"
+      id="close-modal-map"></button>
   </section>
+
+  <!-- toasty -->
+  <img class="toasty" src="img/toasty.png" alt="привет из Мортал Комбат!" id="toasty">
+
+  <script src="js/main.js"></script>
 
 </body>
 

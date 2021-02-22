@@ -1239,25 +1239,18 @@ input[type="radio"].visually-hidden {
   right: 0;
 }
 
-/* .toasty::before {
-  content: '';
-  background-color: #ffffff;
-  width: 190px;
-  height: 120px;
-  color: inherit;
-  font-family: inherit;
-  display: block;
-  position: absolute;
-  top: -50px;
-  left: -50px;
-} */
-
 .modal-show {
   display: block;
   animation: bounce 0.6s;
 }
 
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
@@ -1277,9 +1270,4 @@ input[type="radio"].visually-hidden {
   80% {
     transform: translateX(10px);
   }
-}
-
-.modal-error {
-  animation-name: shake;
-  animation-duration: 0.6s;
 }
