@@ -72,6 +72,7 @@ body {
   background-image: url("../img/bg-main.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  min-width: 980px;
 }
 
 .visually-hidden:not(:focus):not(:active),
